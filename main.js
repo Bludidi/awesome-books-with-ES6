@@ -1,9 +1,7 @@
 /* eslint-disable */
 import Store from './modules/store.js';
 import UI from './modules/ui.js';
-import { DateTime } from './luxon.js';
-
-// setInterval(setTime, 1000);
+import './modules/time.js';
 
 class Book {
   constructor(title, author) {
@@ -39,14 +37,8 @@ document.querySelector('.books').addEventListener('click', (e) => {
   }
 });
 
-const date = document.getElementsByClassName('date')[0];
-date.innerText = ` Date: ${new Date().getDate()} | ${new Date().getMonth()} | ${new Date().getFullYear()}`;
-// const dateDisplay = document.querySelector('.date');
-// const setTime = () => {
-//   const now = DateTime.now();
-//   const date = now.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
-//   dateDisplay.textContent = date;
-// };
+// const date = document.getElementsByClassName('date')[0];
+// date.innerText = ` Date: ${new Date().getDate()} | ${new Date().getMonth()} | ${new Date().getFullYear()}`;
 
 const app = {
   pages: [],
